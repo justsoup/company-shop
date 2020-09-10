@@ -154,6 +154,7 @@
                     </div>
                 </dl>
             </div>
+
             <div class="fund-detail-pay">
                 <div class="fund-detail-pay-desc">
                     <span>策略描述:</span>
@@ -169,20 +170,34 @@
         </div>
 
         <div class="fund-data" id="fund-data">
-            <ul>
+            <ul id="fund-data-ul">
                 <li class="active">实盘结果</li>
                 <li>回测结果</li>
             </ul>
-            <div class="fund-data-select">
+            <div class="fund-data-select fund-data-fact">
 
                 <div class="fund-data-fact-price">
-
+                    <div>
+                        收益统计
+                    </div>
+                    <div>
+                        最新净值
+                    </div>
+                    <div>
+                        <span>2.8222</span>
+                        <span>2020-09-09</span>
+                    </div>
+                    <div>
+                        <span>-2.71%</span>
+                        <span>11:30:00</span>
+                    </div>
                 </div>
+
                 <dl class="fund-data-fact-profit">
-                   <div>
-                       <dt>年化收益</dt>
-                       <dd>40.55%</dd>
-                   </div>
+                    <div>
+                        <dt>年化收益</dt>
+                        <dd>40.55%</dd>
+                    </div>
                     <div>
                         <dt>累计收益</dt>
                         <dd>190.22%</dd>
@@ -204,21 +219,98 @@
                         <dd>30.32%</dd>
                     </div>
                 </dl>
+                <div class="fund-data-fact-image">
+                    <div>
+                        收益统计
+                    </div>
+                    <div class="fund-data-fact-imageContainer">
+                        <img src="" alt="">
+                    </div>
+
+                    <div>
+                        <span>
+                            展示区间
+                        </span>
+                        <input type="date" value="2018-07-22">
+                        -
+                        <input type="date" value="2019-07-22">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>近一月</button>
+                        <button>近三月</button>
+                        <button>近半年</button>
+                        <button>近一年</button>
+                        <button>全部实盘</button>
+                    </div>
+                </div>
 
             </div>
-            <div class="fund-data-select">
 
+
+            <div class="fund-data-select fund-data-back">
+                <ul>
+                    <li class="active">收益统计</li>
+                    <li>交易统计</li>
+                </ul>
+                <table class="fund-table-select">
+                    <tr>
+                        <th></th>
+                    </tr>
+
+                    <tr></tr>
+                </table>
+                <table class="fund-table-select">
+
+                </table>
             </div>
         </div>
 
         <div class="fund-hold">
 
+            <div>策略持仓</div>
+            <div>
+                 <span>当前持仓</span>
+                 <span>——————————————————————————————————————————————————————————</span>
+                <span>历史持仓</span>
+                <input type="date" value="2020-08-08">
+            </div>
+            <table>
+                <tr>
+                    <th>股票</th>
+                    <th>数量</th>
+                    <th>市值</th>
+                    <th>成本价</th>
+                    <th>现价</th>
+                    <th>仓位</th>
+                    <th>当日盈亏</th>
+                    <th>累计盈亏</th>
+                </tr>
+
+                <tr>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                    <td>NaN</td>
+                </tr>
+
+
+
+
+            </table>
         </div>
 
         <div class="more-option">
-
+            <div>
+                <a href="#">相似的商城策略</a>
+                <span>^</span>
+            </div>
         </div>
     </div>
+
 
 </div>
 <script src="js/shppingMall.js"></script>

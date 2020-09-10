@@ -1,5 +1,6 @@
 html{
   font-size: 100px;
+  color: #333333;
 }
 
 
@@ -176,6 +177,7 @@ html{
           margin-left: .6rem;
           border-right: .01rem solid #eee;
           margin-top: .2rem;
+          font-size: 0.18rem;
 
           dd {
             width: 100%;
@@ -335,7 +337,6 @@ html{
           margin-left: .2rem;
           display: inline;
           font-size: 0.26rem;
-          color: #333333;
           line-height: 0.36rem;
           padding-bottom: .12rem;
           cursor: pointer;
@@ -348,19 +349,212 @@ html{
       }
 
       .fund-data-fact{
-        position: absolute;
-        background-color: red;
-        width: 2rem;
-        height: 2rem;
+        position: relative;
+        width: 14.6rem;
+        height: 3.2rem;
+        top: .36rem;
+        left: .5rem;
+        display: block;
+
+        .fund-data-fact-price{
+          position: relative;
+          width: 5.4rem;
+          height: 3.2rem;
+          top: 0;
+          left: 0;
+          border: 0.01rem solid #EDEDED;
+
+          div{
+            position: absolute;
+          }
+
+          div:nth-child(1){
+            width: 1rem;
+            font-size: 0.24rem;
+            left: .48rem;
+            top: .18rem;
+          }
+
+          div:nth-child(2){
+            font-size: 0.18rem;
+            left: .48rem;
+            top: .8rem;
+            width: 1rem;
+          }
+
+          div:nth-child(3){
+            left: .96rem;
+            top: 1.52rem;
+            font-size: 0.4rem;
+            width: 1.4rem;
+            color: #FF0000;
+            text-align: center;
+
+            span:nth-child(2){
+              display: block;
+              font-size: 0.2rem;
+
+            }
+          }
+
+          div:nth-child(4){
+            left: 2.92rem;
+            top: 1.52rem;
+            font-size: 0.4rem;
+            width: 1.4rem;
+            text-align: center;
+
+            color: #42CD4B;
+
+            span:nth-child(2){
+              display: block;
+              font-size: 0.2rem;
+            }
+          }
+
+
+
+        }
+
+        .fund-data-fact-profit{
+          border: 0.01rem solid #EDEDED;
+          position: absolute;
+          //background-color: blue;
+          width: 9.2rem;
+          height: 3.2rem;
+          top: 0;
+          left: 5.4rem;
+
+          div{
+            width: 1.8rem;
+            position: absolute;
+            text-align: center;
+            dt{
+
+              font-size: 0.2rem;
+            }
+
+            dd{
+              display: block;
+              font-size: 0.4rem;
+
+            }
+          }
+
+          div:nth-child(1){
+            top: .86rem;
+            left:1.28rem;
+
+
+            dd{
+
+              color: #FF0000;
+            }
+          }
+          div:nth-child(2){
+            top: .86rem;
+            left:4rem;
+            dd{
+
+              color: #FF0000;
+            }
+          }
+          div:nth-child(3){
+            top: .86rem;
+            left:6.72rem;
+          }
+          div:nth-child(4){
+            top: 1.88rem;
+            left:1.28rem;
+          }
+          div:nth-child(5){
+            top: 1.88rem;
+            left:4rem;
+          }
+          div:nth-child(6){
+            top: 1.88rem;
+            left:6.72rem;
+          }
 
       }
 
-      .fund-data-backTesting{
+        .fund-data-fact-image{
+          position: absolute;
+          width: 14.6rem;
+          height: 6.2rem;
+          top: 3.6rem;
+          left: 0rem;
+          border: 0.01rem solid #EDEDED;
+
+          div:nth-child(1){
+            top: .3rem;
+            left: .44rem;
+            font-size: 0.24rem;
+            width: 80%;
+          }
+
+          div:nth-child(3){
+            width: 100%;
+            top: 6.0rem;
+            left: 0rem;
+            font-size: 0.18rem;
+
+            button:nth-of-type(1){
+              width: .3rem;
+              height: .3rem;
+              margin-left: 1.08rem;
+            }
+
+            button:nth-of-type(2){
+              width: .3rem;
+              height: .3rem;
+
+            }
+
+            button{
+              margin-right: .2rem;
+            }
+
+
+            input{
+              margin-left: .24rem;
+              margin-right: .24rem;
+            }
+          }
+
+
+          .fund-data-fact-imageContainer{
+            position: absolute;
+            width: 14rem;
+            height: 5rem;
+            top: .66rem;
+            left: .28rem;
+
+
+            img{
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+      }
+
+      .fund-data-back{
         position: absolute;
-        background-color: blue;
-        width: 2rem;
-        height: 2rem;
+        background-color: red;
+        width: 14.6rem;
+        height: 3.2rem;
         display: none;
+        top: 0.36rem;
+        left: 0.5rem;
+
+        ul{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
 
       }
     }
@@ -368,11 +562,71 @@ html{
     .fund-hold{
       height: 2.8rem;
       top:2rem;
+      position: relative;
+
+
+
+      div:nth-child(1){
+        font-size: 0.26rem;
+        position: absolute;
+        left: .56rem;
+        top: .2rem;
+        width: 14.8rem;
+      }
+
+      div:nth-child(2){
+        font-size: 0.18rem;
+        position: absolute;
+        left: .48rem;
+        top: .9rem;
+        width: 14.8rem;
+
+        span:nth-of-type(3){
+          color: #B7B7B7;
+        }
+        input{
+          display: inline;
+        }
+      }
+
+      table{
+        width: 14.8rem;
+        position: absolute;
+        top: 1.24rem;
+        left: .48rem;
+        line-height: .48rem;
+
+
+        tr:nth-of-type(1){
+          background-color: #E8ECF0;
+        }
+
+        tr:nth-of-type(2){
+          text-align: center;
+          border: 0.01rem solid #EDEDED;
+        }
+
+
+      }
     }
 
     .more-option{
       height: 1.4rem;
       top: 2.4rem;
+      position: relative;
+
+      div{
+        position: absolute;
+        top: .32rem;
+        left: .54rem;
+        width: 80%;
+
+        a,span{
+
+          font-size: 0.2rem;
+          color: #4283BC;
+        }
+      }
     }
 
 

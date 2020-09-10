@@ -1,4 +1,4 @@
-let fundData=document.getElementById('fund-data'),
+let fundData=document.getElementById('fund-data-ul'),
     tabList=fundData.getElementsByTagName('li'),
     divList=document.getElementsByClassName('fund-data-select');
 
@@ -17,6 +17,3 @@ for (let  i = 0; i <tabList.length ; i++) {
         changeTab(i);
     }
 }
-
-
-
