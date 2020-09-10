@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" href="css/information.less" />
+    <script src="js/less-2.5.3.min.js"></script>
+    <script>
+        ~function anonymous(window){
+            let computedRem=function(){
+                let winW=document.documentElement.clientWidth,
+                    desW=1920;
+                if(winW>=desW){
+                    document.documentElement.style.fontSize='100px';
+                    return;
+                }
+                if(winW>=1200){
+                    document.documentElement.style.fontSize=winW/desW*100+'px';
+                }
+            };
+            computedRem();
+            // window.addEventListener('resize',computedRem);
+
+        }(window)
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="header-nav">
+            <li>首页</li>
+            <li>保险</li>
+            <li>银行</li>
+            <li>贷款</li>
+            <li>外汇</li>
+            <li>黄金</li>
+            <li>白银</li>
+            <li>期货</li>
+            <li>原油</li>
+            <li>行情</li>
+            <li>学堂</li>
+            <li>财经</li>
+            <li>问答</li>
+            <li>策略商城</li>
+        </ul>
+        <div class="header-login">
+            <a href="#">注册/登录</a>
+        </div>
+    </div>
+    <div class="content-logo">
+        <div class="content-logo-one">
+            <img src="img/homeLogo.png" alt="" />
+        </div>
+        <div class="content-logo-two">
+            <img src="img/homeLogoTwo.png" alt="" />
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="fund-detail">
+            <div class="fund-detail-title">
+                <span class="fund-detail-title-name">
+                    成华金福
+                </span>
+                <span class="fund-label">
+                    大盘
+                </span>
+                <span class="fund-label">
+                    价值
+                </span>
+                <span class="fund-label">
+                    成长
+                </span>
+                <span class="fund-detail-title-createDate">
+                    创建日期:2020/02/02
+                </span>
+                <span class="fund-detail-title-backDate">
+                    回溯日期:2020/02/02-2020/02/02
+                </span>
+            </div>
+
+
+            <div class="fund-detail-information">
+                <dl class="fund-detail-information-one">
+                    <dd>
+                        <span>作&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp者:</span>
+                        <span>大虎鲸</span>
+
+                    </dd>
+                    <dd>
+
+                        <span>调仓地点:</span>
+                        <span>14：44</span>
+                    </dd>
+                    <dd>
+                        <span>调仓周期:</span>
+                        <span>5个交易日</span>
+
+                    </dd>
+                    <dd>
+                        <span>实时选股:</span>
+                        <span>否</span>
+
+                    </dd>
+                    <dd>
+                        <span>交易模型:</span>
+                        <span>模型！</span>
+                    </dd>
+
+                </dl>
+                <dl class="fund-detail-information-two">
+
+                    <dd>
+                        <span>下个调仓:</span>
+                        <span>2020/02/02</span>
+                    </dd>
+                    <dd>
+                        <span>持仓大股:</span>
+                        <span>5只</span>
+                    </dd>
+                    <dd>
+                        <span>大盘择时:</span>
+                        <span>无</span>
+                    </dd>
+                    <dd>
+                        <span>静态股票池:</span>
+                        <span>无</span>
+                    </dd>
+
+                </dl>
+
+                <dl class="fund-detail-profit">
+                    <div class="fund-detail-profit-one">
+                        <dt>累计收益</dt>
+                        <dd>23.70%</dd>
+                    </div>
+                    <div class="fund-detail-profit-two">
+                        <dt>年化收益</dt>
+                        <dd>54.44%</dd>
+                    </div>
+                    <div class="fund-detail-profit-three">
+                        <dt>
+                            实盘收益
+                        </dt>
+                        <dd>18.12%</dd>
+                    </div>
+                    <div class="fund-detail-profit-four">
+                        <dt>最大回撤</dt>
+                        <dd>-5%</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="fund-detail-pay">
+                <div class="fund-detail-pay-desc">
+                    <span>策略描述:</span>
+                    <span>典型的高盈利，典型的高盈利，典型的高盈利，典型的高盈利</span>
+                </div>
+                <div class="fund-detail-pay-price">
+                    ￥500/月
+                </div>
+                <div class="fund-detail-pay-btn">
+                    <button>立即订阅</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="fund-data" id="fund-data">
+            <ul>
+                <li class="active">实盘结果</li>
+                <li>回测结果</li>
+            </ul>
+            <div class="fund-data-select">
+
+                <div class="fund-data-fact-price">
+
+                </div>
+                <dl class="fund-data-fact-profit">
+                   <div>
+                       <dt>年化收益</dt>
+                       <dd>40.55%</dd>
+                   </div>
+                    <div>
+                        <dt>累计收益</dt>
+                        <dd>190.22%</dd>
+                    </div>
+                    <div>
+                        <dt>买盘天数</dt>
+                        <dd>1145天</dd>
+                    </div>
+                    <div>
+                        <dt>夏普比率</dt>
+                        <dd>1.22</dd>
+                    </div>
+                    <div>
+                        <dt>最大回撤</dt>
+                        <dd>35.22%</dd>
+                    </div>
+                    <div>
+                        <dt>波动率</dt>
+                        <dd>30.32%</dd>
+                    </div>
+                </dl>
+
+            </div>
+            <div class="fund-data-select">
+
+            </div>
+        </div>
+
+        <div class="fund-hold">
+
+        </div>
+
+        <div class="more-option">
+
+        </div>
+    </div>
+
+</div>
+<script src="js/shppingMall.js"></script>
+</body>
+</html>
